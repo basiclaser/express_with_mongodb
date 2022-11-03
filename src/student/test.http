@@ -1,0 +1,24 @@
+### 
+GET http://localhost:3000/students
+
+### 
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+    "first_name": "a!", 
+    "last_name": "b!", 
+    "email": "c!"
+}
+
+### 
+PUT http://localhost:3000/students/6363ce6fb416e2f737dbffd9
+Content-Type: application/json
+
+{
+    "last_name": "goodbye!"
+}
+
+### get one student by ID
+### delete one student by ID
+### get one student by first_name
