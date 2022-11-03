@@ -10,9 +10,6 @@ api.use(express.json())
 
 
 connectToDatabase().then(() => {
-    api.get("/", (req,res) => {
-        res.send("hello!")
-    })
     api.use("/students", studentsRouter)
     api.listen(PORT, ()=>console.log(`API is listening on http://localhost:${PORT}`))
 })
