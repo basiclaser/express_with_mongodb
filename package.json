@@ -1,7 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "nodemon --es-module-specifier-resolution=node index.js"
+    "dev": "nodemon --es-module-specifier-resolution=node index.js",
+    "start": "node --es-module-specifier-resolution=node index.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
